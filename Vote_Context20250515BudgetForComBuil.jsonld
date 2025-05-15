@@ -1,0 +1,56 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP100:body",
+      "@context": {
+        "references": {
+          "@id": "CIP100:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP100:referenceHash",
+              "@context": {
+                "hashDigest": "CIP100:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "comment": "CIP100:comment",
+        "externalUpdates": {
+          "@id": "CIP100:externalUpdates",
+          "@context": {
+            "title": "CIP100:update-title",
+            "uri": "CIP100:uri"
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "body": {
+    "comment": "　私はこの提案にYES票を投じます。\n本提案は、草の根レベルで活動するCardanoコミュニティビルダーによるプロポーザルを、明確な支持基準（2.69B ADA以上の賛同）に基づいて厳選し、小規模かつ高インパクトな7件の提案に対して7.5M ADAを配分するものです。\n　このアプローチは以下の観点から極めて評価できます：\n分散性の実現：大きな企業やCardanoを作った組織ではない、ふつうの参加者の声が、きちんと予算の支援を受けて実現に向かっている点。\n投票正当性の担保：すべての提案が、アクティブステークに基づいた過半数支持を明示的に得ており、Cardano憲法に準拠していること。\n持続可能な財政運営：7.5M ADAという極めて控えめな金額により、財政負担が最小限に抑えられていること。\n　この提案は、CardanoのVoltaireフェーズにおける新しい市民主体ガバナンスの象徴としても機能するものです。私はこの方向性を強く支持します。\n\n---\n\nI cast a YES vote on this proposal.\n\nThis proposal allocates 7.5 million ADA to seven carefully selected proposals submitted by grassroots Cardano community builders. Each proposal met a clear support threshold—more than 2.69 billion ADA in voting stake—and represents small-scale but high-impact initiatives.\n\nThis approach is highly commendable for the following reasons:\n\nDecentralization in action: It ensures that the voices of everyday participants—not large corporations or founding entities—can move forward with proper financial support.\n\nLegitimacy of the vote: All proposals explicitly secured majority support based on active stake and are in full compliance with the Cardano Constitution.\n\nFinancial sustainability: The total allocation of 7.5 million ADA is a very modest amount, keeping the financial burden on the Treasury to a minimum.\n\nThis proposal also serves as a symbol of the new citizen-led governance envisioned in Cardano's Voltaire phase. I strongly support this direction."
+  },
+  "hashAlgorithm": "blake2b-256"
+}
