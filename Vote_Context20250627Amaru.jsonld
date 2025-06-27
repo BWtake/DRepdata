@@ -1,0 +1,56 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP100:body",
+      "@context": {
+        "references": {
+          "@id": "CIP100:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP100:referenceHash",
+              "@context": {
+                "hashDigest": "CIP100:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "comment": "CIP100:comment",
+        "externalUpdates": {
+          "@id": "CIP100:externalUpdates",
+          "@context": {
+            "title": "CIP100:update-title",
+            "uri": "CIP100:uri"
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "body": {
+    "comment": "Amaruプロジェクトは、RustによるCardano互換ノードの開発を通じて、ノード多様性とネットワークの堅牢性を高め、Cardanoの持続可能な未来を切り拓く鍵となる提案です。中立的運営とスマートコントラクトによる透明な資金管理、PRAGMAの多元的ガバナンス体制は「分散型公共財」としての模範的構造です。成功すれば、軽量・柔軟・開発者に優しいノード運用環境が整い、より多様なステークホルダーがCardanoの中核を担える社会基盤が実現します。私はこの未来に希望を抱き、本提案に賛成いたします。\n\n****************\n\nThe Amaru project aims to strengthen the Cardano network by building a fully interoperable, Rust-based node that enhances diversity and resilience. With neutral governance, transparent smart contract-based fund management, and a multi-entity structure under PRAGMA, Amaru embodies the ideal of a decentralized public good. If successful, it will enable lightweight, developer-friendly node operations and expand opportunities for diverse stakeholders to sustain Cardano’s core infrastructure. I support this vision and vote  YES  on this proposal."
+  },
+  "hashAlgorithm": "blake2b-256"
+}
