@@ -1,0 +1,56 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP100:body",
+      "@context": {
+        "references": {
+          "@id": "CIP100:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP100:referenceHash",
+              "@context": {
+                "hashDigest": "CIP100:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "comment": "CIP100:comment",
+        "externalUpdates": {
+          "@id": "CIP100:externalUpdates",
+          "@context": {
+            "title": "CIP100:update-title",
+            "uri": "CIP100:uri"
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "body": {
+    "comment": "**条件付き賛成。** 本提案はスリッページ低減に正面から取り組み、安定通貨の板厚化によってCardano DeFiの使いやすさを改善する点を評価し、賛成します。公益性と波及効果も大きいと考えます。\n\nただし、**次の改善を求めます**：\n\n1. 財務への還元計算式を明確にすること\n2. 委員会メンバーの利益相反ルールを明文化すること\n3. 法定担保ステーブルの分散を確保すること\n4. 非常時縮退とKPI測定仕様を契約に組み込むこと\n\n---\n\n**Conditional Yes.** I support this proposal for its clear impact on reducing slippage and improving Cardano DeFi usability, while recognizing its public-good value and ecosystem benefits.\n\nThat said, **I request the following improvements**:\n\n1. Clarify the yield-to-treasury math\n2. Codify conflict-of-interest rules for committee members\n3. Diversify fiat-backed stablecoin exposures\n4. Hardwire emergency unwind and KPI measurement specs\n"
+  },
+  "hashAlgorithm": "blake2b-256"
+}
