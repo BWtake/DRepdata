@@ -1,0 +1,56 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP100:body",
+      "@context": {
+        "references": {
+          "@id": "CIP100:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP100:referenceHash",
+              "@context": {
+                "hashDigest": "CIP100:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "comment": "CIP100:comment",
+        "externalUpdates": {
+          "@id": "CIP100:externalUpdates",
+          "@context": {
+            "title": "CIP100:update-title",
+            "uri": "CIP100:uri"
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "body": {
+    "comment": "YES — 誠実な修復行為を通じて、信頼あるガバナンスを育てるために支持します。 \nChangハードフォーク直後、最初期のオンチェーン提案「Ikigai Info Action」の提出時に、未登録ステークキーが使用できてしまうノードのバグが存在し、これにより提出者のデポジット10万ADAが自動返還されないままロックされる事態が発生しました。 当時から補償の必要性は広く認識されていましたが、当時はまだトレジャリー引き出し機能が存在せず、対応が保留されていました。 今回の提案はその問題を正式なガバナンス手続きで誠実に修復する行為であり、Cardanoの制度が「個人の損失を無視しない文化」として成熟していることを示しています。 この補償は単なる返金ではなく、信頼あるガバナンスの礎を築く象徴的な一歩といえます。\n\n—\n\nYES — I support this proposal as a sincere act of restoration that strengthens trustworthy governance.\nSoon after the Chang hard fork, during the submission of one of the earliest on-chain proposals, the “Ikigai Info Action,” a node bug allowed the use of an unregistered stake key, causing the submitter’s 100,000 ADA deposit to remain locked and unrecoverable.\nAlthough the need for reimbursement was widely recognized at the time, the treasury withdrawal mechanism did not yet exist, and thus corrective action had to be postponed.\nThis proposal represents a sincere and principled effort to resolve that issue through proper governance, demonstrating Cardano’s maturity as a system that does not ignore individual losses.\nIt is more than a refund — it is a symbolic step toward cultivating a culture of fairness, accountability, and trustworthy governance within Cardano."
+  },
+  "hashAlgorithm": "blake2b-256"
+}
