@@ -1,0 +1,56 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP100:body",
+      "@context": {
+        "references": {
+          "@id": "CIP100:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP100:referenceHash",
+              "@context": {
+                "hashDigest": "CIP100:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "comment": "CIP100:comment",
+        "externalUpdates": {
+          "@id": "CIP100:externalUpdates",
+          "@context": {
+            "title": "CIP100:update-title",
+            "uri": "CIP100:uri"
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "body": {
+    "comment": "本提案は、スナップ選挙で選出された憲法委員会メンバーをオンチェーンで追加し、委員会の最小構成要件を回復するための技術的・制度的措置です。「技術的」とは、Cardanoが委員数・署名形式・任期をプロトコルで自動検証し、不備があれば憲法ガードレールが作動してガバナンスが停止する仕組みを指します。\n今回のスナップ選挙は、欠員によるガバナンス停止を避けるためにIntersectが実施した特別選挙で、DRepsのみが参加し、ステーク重みで集計され監査も行われました。私もDRepとして投票しており、本提案はその結果を正式にプロトコルへ反映する最終手続きです。本提案は新たな支出を伴わず、選挙結果も監査により透明性が担保されています。コミュニティの意思を確実に反映し、Cardanoの安定したガバナンス継続に資すると判断し、賛成します。\n\n---\n\nThis proposal adds the Constitutional Committee member elected in the recent snap election, restoring the committee to its required minimum size. “Technical” refers to Cardano’s protocol, which automatically verifies committee size, signatures, and term parameters, activating constitutional guardrails and halting governance if requirements are unmet.\nThe snap election was a special vote held by Intersect to quickly fill a vacant seat and avoid governance interruption. It was conducted off-chain through an election portal, limited to DReps and weighted by delegated stake. I participated in this election, and this proposal formalizes its audited results on-chain. As it requires no new treasury spending and preserves transparent community decision-making, I support the proposal."
+  },
+  "hashAlgorithm": "blake2b-256"
+}
