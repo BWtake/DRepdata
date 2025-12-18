@@ -1,0 +1,56 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP100:body",
+      "@context": {
+        "references": {
+          "@id": "CIP100:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP100:referenceHash",
+              "@context": {
+                "hashDigest": "CIP100:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "comment": "CIP100:comment",
+        "externalUpdates": {
+          "@id": "CIP100:externalUpdates",
+          "@context": {
+            "title": "CIP100:update-title",
+            "uri": "CIP100:uri"
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "body": {
+    "comment": "本提案は投票行動を拘束するものではなく、DRepが将来の提案を評価するための共通の戦略的判断軸を提供します。\n私は先の 2030 Cardano Visionアンケート において「カルダノブランドの確立」を提案しました。本Visionは、Cardanoを「最も安全・信頼性が高く・検閲耐性のある基盤」と位置づけ、取りに行く市場・優先する用途・競争しない領域を明確に定義しています。これは、ブランドを単なる言葉ではなく、Cardanoが社会の中でどの役割を担うのかという立ち位置として構造化するものです。\nまた、Visionが無いことによるリスク（ナラティブの乗っ取りや差別化の喪失）を明示した上で、Pillar 4 において、Cardanoの価値や強みを外部に継続的に示していく方針を定めています。これにより、「なぜCardanoが選ばれるのか」を社会に説明できる形で、信頼を積み上げていく設計になっています。\n本枠組みはDRepの自由な判断を保ちつつ、KPI（最終目標に至るまでの進捗を測るための重要業績評価指標）という共通の物差しを提供する提案であると考え、賛成します。\n\n---\n\nThis proposal does not constrain DRep voting. It provides a shared strategic reference for evaluating future proposals.\nIn the 2030 Cardano Vision survey, I emphasized the importance of establishing the Cardano brand. This Vision positions Cardano as a secure, reliable, and censorship-resistant foundation, clearly defining which markets it aims to serve, which use cases it prioritizes, and where it does not compete. In this sense, the brand is expressed as a clear long-term positioning, not as marketing language.\nThe proposal also identifies the risks of operating without a clear vision, such as narrative capture and loss of differentiation, and sets a direction under Pillar 4 to continuously communicate Cardano’s value to the outside world, helping to build long-term trust.\nBy offering shared KPIs as a common measuring stick while preserving DRep autonomy, I support this proposal."
+  },
+  "hashAlgorithm": "blake2b-256"
+}
