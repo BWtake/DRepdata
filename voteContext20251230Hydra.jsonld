@@ -1,0 +1,56 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP100:body",
+      "@context": {
+        "references": {
+          "@id": "CIP100:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP100:referenceHash",
+              "@context": {
+                "hashDigest": "CIP100:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "comment": "CIP100:comment",
+        "externalUpdates": {
+          "@id": "CIP100:externalUpdates",
+          "@context": {
+            "title": "CIP100:update-title",
+            "uri": "CIP100:uri"
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "body": {
+    "comment": "本提案は Treasury Withdrawal ではなく、今後の方向性に対する意思表示を問う Info Action であり、現時点で資金移動を伴いません。Hydraを用いた低遅延・板取引インフラは、Cardanoにおいて依然として不足している重要な基盤領域です。DeltaDeFiチームは、MeshJSをはじめとする中核的な開発者向けツールを長年オープンソースで提供し、Catalystにおいても実績を積んできました。実装力と継続的なエコシステム貢献が確認できるチームによる、Vision 2030に沿った検証的提案として、本Info ActionにYesを投じます。\n\n---\n\nThis proposal is an Info Action, not a Treasury Withdrawal, and does not involve any movement of funds at this stage.\nLow-latency, order-book trading infrastructure using Hydra remains an important but still underdeveloped area for Cardano.\nThe DeltaDeFi team has a proven track record, including long-term open-source contributions such as MeshJS and successful Project Catalyst deliveries.\nAs an experimental proposal aligned with Vision 2030 and backed by a capable team, I vote Yes on this Info Action."
+  },
+  "hashAlgorithm": "blake2b-256"
+}
