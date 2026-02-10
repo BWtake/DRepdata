@@ -1,0 +1,56 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP100:body",
+      "@context": {
+        "references": {
+          "@id": "CIP100:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP100:referenceHash",
+              "@context": {
+                "hashDigest": "CIP100:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "comment": "CIP100:comment",
+        "externalUpdates": {
+          "@id": "CIP100:externalUpdates",
+          "@context": {
+            "title": "CIP100:update-title",
+            "uri": "CIP100:uri"
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "body": {
+    "comment": "本提案は、Constitutional Committee（CC）の権限や判断基準を緩めるものではなく、偶発的な欠員・病欠・辞任によってガバナンスが停止するリスクを回避するための運用上の安全弁と評価します。\nCCは7人運用を前提としていますが、現行の最小人数（min=7）では1人でも非稼働になると即時停止する脆弱性があります。本提案はこの状態を是正し、2人までの一時的欠員があっても憲法ガバナンスを継続可能にする調整です。\n5人はあくまで緊急時の下限であり、7人原則を前提とした運用規律を維持すべきと考えます。本変更は憲法防衛を弱めるものではなく、実効性と信頼性を高める成熟した改善として賛成します。\n\n---\n\nThis proposal does not weaken the authority or decision standards of the Constitutional Committee (CC).\nIt introduces an operational safeguard to prevent governance from becoming inoperable due to accidental absences, illness, or resignations.\nWhile the CC is designed to operate with seven members, the current minimum (min=7) creates a practical fragility, as the committee stops functioning if even one member becomes unavailable.\nReducing the minimum to five allows the CC to remain operational during temporary absences, without changing its role or decision thresholds.\nFive members should be understood as an emergency lower bound, not a new norm.\nWith the seven-member principle maintained, this adjustment strengthens the effectiveness and reliability of constitutional governance.\nFor these reasons, I support this proposal."
+  },
+  "hashAlgorithm": "blake2b-256"
+}
