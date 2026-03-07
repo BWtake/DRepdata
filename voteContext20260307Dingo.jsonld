@@ -1,0 +1,56 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP100:body",
+      "@context": {
+        "references": {
+          "@id": "CIP100:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP100:referenceHash",
+              "@context": {
+                "hashDigest": "CIP100:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "comment": "CIP100:comment",
+        "externalUpdates": {
+          "@id": "CIP100:externalUpdates",
+          "@context": {
+            "title": "CIP100:update-title",
+            "uri": "CIP100:uri"
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "body": {
+    "comment": "Cardanoの現状では、ブロック生成ノードは事実上単一実装であり、長期的には single point of failure のリスクを伴います。\nその意味で、Goによる独立したノード実装を進める本提案は、ネットワークのレジリエンスとクライアント多様性の向上に資する重要な取り組みであり、技術的方向性は高く評価しています。\n一方で、ストレージのスケーラビリティ検証は極めて重要です。将来のネットワーク規模においても安定して運用できることについて、今後の検証と説明の充実を期待します。\n提案された予算規模と開発実績を踏まえると、費用対効果も良好と考えます。\n以上を踏まえ、本提案を条件付きで支持します。\n\n---\n\nCardano currently relies on a single block-producing node implementation, which may create a single point of failure risk over the long term.\n\nIn this sense, developing an independent Go-based node is an important effort that can improve network resilience and client diversity. I highly appreciate the technical direction of this proposal.\n\nHowever, storage scalability verification is extremely important.\nI hope to see further testing and clearer explanations showing that the system can operate reliably as the network grows.\n\nConsidering the proposed budget and the team’s development track record, the cost-effectiveness also appears reasonable.\n\nBased on these points, I support this proposal with conditions."
+  },
+  "hashAlgorithm": "blake2b-256"
+}
