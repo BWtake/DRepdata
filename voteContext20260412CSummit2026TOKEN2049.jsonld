@@ -1,0 +1,56 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP100:body",
+      "@context": {
+        "references": {
+          "@id": "CIP100:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP100:referenceHash",
+              "@context": {
+                "hashDigest": "CIP100:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "comment": "CIP100:comment",
+        "externalUpdates": {
+          "@id": "CIP100:externalUpdates",
+          "@context": {
+            "title": "CIP100:update-title",
+            "uri": "CIP100:uri"
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "body": {
+    "comment": "本提案は、Cardanoが「研究チェーン」から「市場チェーン」へ移行できるかを問う重要な一歩であり、その方向性には賛成するためYESとする。ただし、来場者数や露出といったマーケ指標に偏っており、成果測定が不十分である。今後はTVLや開発者数、実際の資本流入などオンチェーン指標と連動させ、「支出」ではなく「投資」として評価できる構造への進化を求める。\n\n---\n\nThis proposal represents an important step in determining whether Cardano can transition from a “research chain” to a “market chain.” I support this direction and vote YES.\nHowever, the current KPIs are too focused on marketing metrics such as attendance and visibility, which are insufficient to measure real ecosystem growth. Future evaluations should include on-chain metrics such as TVL, developer activity, and actual capital inflows.\nCardano’s treasury should evolve from simple spending toward an investment model with measurable outcomes.\n"
+  },
+  "hashAlgorithm": "blake2b-256"
+}
