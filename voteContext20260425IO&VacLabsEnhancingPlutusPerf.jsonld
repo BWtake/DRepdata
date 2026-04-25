@@ -1,0 +1,56 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP100:body",
+      "@context": {
+        "references": {
+          "@id": "CIP100:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP100:referenceHash",
+              "@context": {
+                "hashDigest": "CIP100:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "comment": "CIP100:comment",
+        "externalUpdates": {
+          "@id": "CIP100:externalUpdates",
+          "@context": {
+            "title": "CIP100:update-title",
+            "uri": "CIP100:uri"
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "body": {
+    "comment": "本提案は、Plutus上で動作するDAppを「低コスト・高信頼・開発容易」にするための基盤強化である。具体的には、スマートコントラクト内で頻繁に行われるデータ処理やトークン操作をより効率的に実行できる仕組みを導入することで、手数料の削減と処理効率の向上を実現する。これにより、DeFiや複数トークンを扱うアプリケーションの実用性が高まる。\nまた、プログラムの挙動を形式的に定義し、それに基づいて異なる実装間でも同一の結果が得られることを検証する仕組みを強化することで、ノード多様化が進む中でも一貫した動作と高い信頼性を確保する。さらに、開発ツールやコンパイラの改善により、エラーの可視性や開発環境の整備が進み、新規開発者の参入障壁も低下する。\n一部の機能はハードフォークやCIPの確定に依存するが、Cardanoのスマートコントラクト基盤を次の段階へ引き上げる重要な投資であり、長期的なエコシステム成長に不可欠と判断し、強く賛成する。\n\n---\n\nThis proposal strengthens the foundation of Plutus to make DApps on Cardano more cost-efficient, reliable, and easier to develop. It introduces more efficient ways to handle data processing and token operations within smart contracts, reducing fees and improving execution performance. This directly enhances the practicality of DeFi and multi-asset applications.\n\nIt also improves reliability by formally defining program behavior and introducing stronger testing methods to ensure consistent results across different node implementations. This is especially important as node diversity increases. In addition, better developer tools and compiler improvements will make errors clearer and simplify the development environment, lowering the barrier for new developers.\n\nWhile some features depend on future hard forks and CIP finalization, this is a critical investment to advance Cardano’s smart contract infrastructure and support long-term ecosystem growth. I strongly support this proposal.\n"
+  },
+  "hashAlgorithm": "blake2b-256"
+}
