@@ -1,0 +1,87 @@
+{
+  "@context": {
+    "@language": "en-us",
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "CIP119": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0119/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP119:body",
+      "@context": {
+        "references": {
+          "@id": "CIP119:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Identity": "CIP119:IdentityReference",
+            "Link": "CIP119:LinkReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP119:referenceHash",
+              "@context": {
+                "hashDigest": "CIP119:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "paymentAddress": "CIP119:paymentAddress",
+        "givenName": "CIP119:givenName",
+        "image": {
+          "@id": "CIP119:image",
+          "@context": {
+            "ImageObject": "https://schema.org/ImageObject",
+            "contentUrl": "CIP119:contentUrl",
+            "sha256": "CIP119:sha256"
+          }
+        },
+        "objectives": "CIP119:objectives",
+        "motivations": "CIP119:motivations",
+        "qualifications": "CIP119:qualifications",
+        "doNotList": "CIP119:doNotList"
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "hashAlgorithm": "blake2b-256",
+  "body": {
+    "givenName": "BWtake(長崎)Japan",
+    "image": {
+      "@type": "ImageObject",
+      "contentUrl": "https://storage.googleapis.com/teko-gae.appspot.com/media/image/2025/10/1/31e26fc6-5407-4785-be78-938954efb249/BWtakeOrig.png",
+      "sha256": "38aeb229421c550097fd096c241c4ab63eac382aa987c8d251d2369d14414a28"
+    },
+    "motivations": "私がCardanoに最も魅力を感じる理由は、単なるブロックチェーンではなく、「価値を定義し、保存し、移送する制度そのもの」を設計しようとしている点です。\n私は以前から、一つの問いを考え続けています。\nシンギュラリティが現実となったとき、超越AIは「価値」という構造をどのように定義し、それを移送するプロトコルとして何を選ぶ、あるいは創出するのだろうか。\n私は、その問いに対する有力な答えの一つが、進化し続けるCardanoなのではないかと考えています。\nCardanoは、お金だけを移送するプロトコルではありません。\n意思決定、アイデンティティ、信頼、ガバナンス──人間社会が価値と呼ぶものを扱うプロトコルへ進化しようとしています。\nその進化をDRepとして最前列から見届けられること。\nそして、その歴史のほんの一部でも自分が担えること。\nそれが、私が活動を続ける最大の動機です。\n\n---\n\nWhat fascinates me most about Cardano is that it is not merely building a blockchain. It is attempting to design the institutions through which value itself is defined, preserved, and transferred.\nOne question has remained with me for years:\nWhen the Singularity becomes reality, how will a superintelligent AI define the structure of value, and what protocol will it choose—or create—for its transfer?\nI believe that the continuously evolving Cardano ecosystem may represent one compelling answer to that question.\nCardano is not merely a protocol for transferring money.\nIt is evolving toward a protoc",
+    "objectives": "私は長崎で内科医として勤務しながら、CardanoのDRepとして活動しています。\n息子が2021年4月にSPO（Ticker: NGS）を立ち上げたことを契機にCardanoへ関わり始め、Catalyst VotingやTest Netへの参加を通じて学び続け、活動の幅を広げてきました。\nCardanoは、「資本に抗するための制度」を先に作り込み、実装してきた数少ないL1です。カルダノ憲法が示すように、分散性と公共財としての制度設計を基盤に据えている点に、強い希望を見出しています。\n私は開発者ではありません。しかし、DRepとして透明性と誠実さを大切にし、投票と継続的な学習を通じて、Cardanoがより良い未来へ進む一助となることを目指しています。\n\n---\n\nI am an internal medicine physician based in Nagasaki, Japan, and I also serve as a DRep in the Cardano ecosystem.\nMy journey with Cardano began in April 2021, when my son launched an SPO under the ticker NGS. Since then, I have continued learning through Catalyst voting, testnet participation, and broader involvement in the ecosystem.\nI believe Cardano is one of the few Layer 1 blockchains that has deliberately designed and implemented institutions capable of resisting the dominance of capital. As reflected in the Cardano Constitution, its foundation in decentralization and public-good institutional design gives me great hope.\nI am not a protocol develope",
+    "paymentAddress": "addr1qy342etnn7696yu9n92nk54ug055ef2p32vysg8akrdp2n3amy5fnamj63sk5xnle0cufvtpm6u00mkvwltthm8wv2kqeyj3tu",
+    "qualifications": "投票哲学――8つの評価軸\n\n私は、すべての提案を次の8つの視点から評価しています。\n\n1. 公益性\n2. 戦略的整合性\n3. 信頼性\n4. 実現性\n5. 波及効果\n6. 費用対効果\n7. ガバナンス設計\n8. 対話姿勢\n\n100年後、200年後のCardanoが、なお人々に価値を生み続けられる制度であり続けるか。\nその視点を基準に投票しています。\n\n---\n\nMy Voting Principles\n\nI evaluate every proposal according to eight principles.\n\n1. Public Benefit\n2. Strategic Alignment\n3. Credibility\n4. Feasibility\n5. Ecosystem Impact\n6. Cost Effectiveness\n7. Governance Design\n8. Community Engagement\n\nMy central question is whether Cardano can remain an institution that continues to create value for people 100 or 200 years from now.\nThat long-term perspective guides my decisions.",
+    "references": [
+      {
+        "@type": "Link",
+        "label": "学位論文(Thesis)",
+        "uri": "https://www.sciencedirect.com/science/article/abs/pii/S0165460898001411"
+      },
+      {
+        "@type": "Link",
+        "label": "著作 (Publications)",
+        "uri": "https://www.amazon.co.jp/dp/B0BFV292N1"
+      }
+    ]
+  }
+}
