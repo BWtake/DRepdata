@@ -1,0 +1,56 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP100:body",
+      "@context": {
+        "references": {
+          "@id": "CIP100:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP100:referenceHash",
+              "@context": {
+                "hashDigest": "CIP100:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "comment": "CIP100:comment",
+        "externalUpdates": {
+          "@id": "CIP100:externalUpdates",
+          "@context": {
+            "title": "CIP100:update-title",
+            "uri": "CIP100:uri"
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "body": {
+    "comment": "私は本Protocol Parameter Changeに賛成します。\nminPoolCostを170 ADAから75 ADAへ引き下げることで、小規模SPOに「自分の取り分を減らしてDelegatorへの還元率を上げる」という競争手段を与えることができます。これは、固定費によって小規模Stake Poolが受ける構造的不利益を緩和し、Cardanoの分散化を支える妥当な暫定措置だと考えます。\nこれはSPOに75 ADAを強制するものではなく、将来的なminPoolMarginなど報酬制度の抜本的改善までの橋渡しです。\n\n---\n\nI vote YES on this Protocol Parameter Change.\n\nReducing minPoolCost from 170 ADA to 75 ADA gives smaller SPOs the option to reduce their own fixed fee and improve returns for delegators. This helps reduce the structural disadvantage faced by smaller stake pools and supports Cardano’s decentralization.\n\nThis does not force SPOs to set their fee at 75 ADA. I see it as a reasonable interim step toward broader reward-system reforms such as minPoolMargin. "
+  },
+  "hashAlgorithm": "blake2b-256"
+}
